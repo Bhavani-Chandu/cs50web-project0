@@ -1,23 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <style>
+        #headshot {
+            max-width: 30%;
+        }
+
+        div {
+            border-style: solid;
+            border-width: 1px;
+        }
+    </style>
+
     <title>My Webpage</title>
 </head>
 
 <body>
-    <p>Hello, worlde! Welcome to Home page.</p>
-    <p>
-        Here's my face:
-        <img src="content/selfpicture.jpg" alt="Elias Vakkuri">
-    </p>
-    <p>
-        Links:
-        <a href="index.html">Home</a>
-        <a href="page1.html">Page 1</a>
-        <a href="page2.html">Page 2</a>
-        <a href="page3.html">Page 3</a>
-    </p>
+
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <img id="headshot" src="content/selfpicture.jpg" class="img-fluid rounded-circle img-thumbnail" alt="Picture of Elias Vakkuri">
+            <h1 class="display-4">Elias Vakkuri</h1>
+            <p class="lead">Here's my face.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="col-md-4">
+                <h2>Work history</h2>
+                <p>To be added.</p>
+                <p><a class="btn btn-secondary" href="page1.html" role="button">View details »</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Examples of projects</h2>
+                <p>To be added.</p>
+                <p><a class="btn btn-secondary" href="page2.html" role="button">View details »</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Texts</h2>
+                <p>To be added.</p>
+                <p><a class="btn btn-secondary" href="page3.html" role="button">View details »</a></p>
+            </div>
+
+        </div>
+    </div>
+
 </body>
 
 </html>
