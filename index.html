@@ -12,26 +12,72 @@
 
     <style>
         #headshot {
-            max-width: 30%;
+            width: 15rem;
         }
 
+        #banner {
+            padding: 0.2cm;
+            margin-bottom: 2rem;
+            background-color: lightgrey;
+        }
+
+        #navbarlinks {
+            text-align: end;
+        }
+
+        #contactlink {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #464a4c;
+        }
+
+        #contactlink:hover {
+            border-color: #ddd;
+        }
+        
+        /*
         div {
             border-style: solid;
             border-width: 1px;
         }
+        */
+        
     </style>
 
-    <title>My Webpage</title>
+    <title>Elias Vakkuri</title>
 </head>
 
 <body>
 
-    <div class="jumbotron jumbotron-fluid text-center">
-        <div class="container">
-            <img id="headshot" src="content/selfpicture.jpg" class="img-fluid rounded-circle img-thumbnail" alt="Picture of Elias Vakkuri">
-            <h1 class="display-4">Elias Vakkuri</h1>
-            <p class="lead">Here's my face.</p>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <a class="navbar-brand" href="index.html">Elias Vakkuri</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarlinks" aria-controls="navbarlinks"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarlinks" class="navbar-collapse collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page-workhistory.html">Work history</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page-projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page-contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+
+    <div id="banner" class="container-fluid text-center">
+        <img id="headshot" src="content/selfpicture.jpg" class="rounded-circle" alt="Picture of Elias Vakkuri">
+        <h1 class="display-4">Elias Vakkuri</h1>
+        <p class="lead">Cloud Architect</p>
+        <p>Welcome to my homepage! Here you can find information about me, my work history and projects that I've done.</p>
     </div>
 
     <div class="container">
@@ -44,13 +90,13 @@
             </div>
 
             <div class="col-md-4">
-                <h2>Examples of projects</h2>
+                <h2>Projects</h2>
                 <p>To be added.</p>
                 <p><a class="btn btn-secondary" href="page2.html" role="button">View details »</a></p>
             </div>
 
             <div class="col-md-4">
-                <h2>Texts</h2>
+                <h2>Contact</h2>
                 <p>To be added.</p>
                 <p><a class="btn btn-secondary" href="page3.html" role="button">View details »</a></p>
             </div>
