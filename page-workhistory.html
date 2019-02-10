@@ -29,6 +29,10 @@
                 font-size: 3.5rem;
             }
         }
+
+        .workhistorysection {
+            margin-top: 2em;
+        }
     </style>
 
     <title>Work history</title>
@@ -41,10 +45,10 @@
         <div id="navbarlinks" class="navbar-collapse collapse" style="">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="page-workhistory.html">Work history</a>
+                    <a class="nav-link" href="page-workhistory.html">Work history <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="page-projects.html">Projects</a>
@@ -66,34 +70,109 @@
     </main><!-- /.container -->
 
     <div class="container">
-        <h3 class="text-center">Work experience</h3>
+        <h3 class="text-center">Latest work experience</h3>
 
         <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th class ="col-2">Time</th>
+                    <th>Role</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
             <tbody>
                 <tr>
-                    <td>Apr 2017-now</td>
-                    <td>Cloud Architect, Senior Consultant at CGI Advanced Analytics Solutions</td>
-                    <td>Currently working as a coding architect at CGI. Formerly known as Bigdatapump, our unit is
-                        committed to solving any analytical challenge.</td>
-                    <td>Public cloud, Data, Digital Products</td>
+                    <td>
+                        <p>Mar 2017-</p>
+                    </td>
+                    <td>Cloud Architect, Senior Consultant at CGI Advanced Analytics Solutions (formerly Bigdatapump)</td>
+                    <td>Currently a coding architect at CGI. Formerly known as Bigdatapump, our unit is
+                        committed to solving any analytical challenge. Working on data platforms (at the moment
+                        primarily in Azure), data strategy, DevOps stuff.</td>
                 </tr>
                 <tr>
                     <td>Dec 2014-Mar 2017</td>
                     <td>Consultant & Senior Consultant at Magenta Advisory (now part of BearingPoint)</td>
                     <td>Magenta Advisory focused on aiding clients with digital transformations, from data strategy to
-                        implementing digital sales and marketing.</td>
-                    <td>Digital Strategy, Digital Product Management</td>
+                        implementing digital sales and marketing. Worked on shorter and longer projects on digital
+                        strategy, digital product management, sales and marketing.</td>
+                </tr>
+                <tr>
+                    <td>Feb 2014-Dec 2014</td>
+                    <td>Project Manager at Tieto</td>
+                    <td>In Tieto's Managed Services business. Worked on large-scale server migrations, process
+                        definitions, product development.</td>
+                </tr>
+                <tr>
+                    <td>May 2012-Nov 2013</td>
+                    <td>Trainee, Master's thesis worker at ABB</td>
+                    <td>In ABB Finland's product data management unit, part-time with studies and full-time for
+                        Master's thesis. Worked on process improvements, metrics, data visualization.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 class="text-center workhistorysection">Example projects</h3>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th class="col-3">Project</th>
+                    <th>Duration</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Banking sector – Project lead and Product Owner - Azure analytics platform</p>
+                        <p>Helsinki, Finland</p>
+                    </td>
+                    <td>1 year</td>
+                    <td>
+                        <p>Leading a multi-vendor team building and operating an Azure-based analytics platform.
+                            Setting the
+                            architecture vision together with client stakeholders and development team. Translating
+                            business needs to concrete architecture plans for development.</p>
+                        <p>Keywords:
+                            <span class="badge badge-secondary">Azure</span>
+                            <span class="badge badge-secondary">Data Lake Store</span>
+                            <span class="badge badge-secondary">Data Factory</span>
+                            <span class="badge badge-secondary">HDInsight</span>
+                            <span class="badge badge-secondary">Azure Container Service (Kubernetes)</span>
+                            <span class="badge badge-secondary">Azure Container Registry</span>
+                            <span class="badge badge-secondary">API Management</span>
+                            <span class="badge badge-secondary">CosmosDB</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Telecom sector – Product Owner - eCommerce platform</p>
+                        <p>Amsterdam, Netherlands</p>
+                    </td>
+                    <td>1 year</td>
+                    <td>
+                        <p>Product Owner for multiple eCommerce platforms operating in several countries in Europe.
+                            Working together with country-specific teams to set the product vision and taking that to
+                            development.</p>
+                        <p>Keywords:
+                            <span class="badge badge-secondary">eCommerce</span>
+                            <span class="badge badge-secondary">Product management</span>
+                            <span class="badge badge-secondary">Web services</span>
+                            <span class="badge badge-secondary">Personalization</span>
+                        </p>
+                    </td>
                 </tr>
             </tbody>
         </table>
 
     </div>
 
-    <div class="container text-center">
-        <h3>Certifications and exams</h2>
+    <div class="container text-center workhistorysection">
+        <h3>Certifications and exams</h3>
 
             <!-- Links to Acclaim for certification badges, will add once finalized -->
-            <!--
+
             <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="cdfbd38c-d590-4d90-99b1-dc9018f56f66"></div>
             <script type="text/javascript">
                 (function () {
@@ -117,7 +196,7 @@
                     o.parentNode.insertBefore(s, o);
                 })();
             </script>
-            -->
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
